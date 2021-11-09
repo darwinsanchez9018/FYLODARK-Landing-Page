@@ -1,0 +1,43 @@
+.button {
+    position: relative;
+    display: block;
+    width: 65%;
+    padding: .85rem 3rem;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 5rem;
+    font-size: .85rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--white-color);
+    @include tablet {
+        position: absolute;
+        width: 50%;
+        top: 7%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.2rem 3rem;
+        font-size: 1rem;
+
+    }
+    @include desktop {
+        position: absolute;
+        width: 20%;
+        top: -10%;
+
+
+        &:hover {
+            background-image: none;
+            background-color: var(--cyan-hover);
+        }
+    }
+
+
+    &--cyan {
+        background-image: linear-gradient(to right, var(--cyan-color), var(--blue-color));
+
+    }
+}

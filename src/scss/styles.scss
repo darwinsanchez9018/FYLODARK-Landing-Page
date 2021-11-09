@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+
+@import "config/variables";
+@import "base/base";
+@import "mixins/reset-list";
+
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/hero";
+@import "blocks/main";
+@import "blocks/buttons";
+@import "blocks/article";
+@import "blocks/section";
+@import "blocks/section-two";
+@import "blocks/section-three";
+@import "blocks/card";
+@import "blocks/aside";
+@import "blocks/footer";

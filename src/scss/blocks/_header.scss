@@ -1,0 +1,26 @@
+@import "mixins/breakpoints";
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    @include tablet {
+        padding: 3rem 5rem 0 5rem;
+    }
+    @include desktop {
+        padding: 5rem 5rem 0 5rem;
+    }
+}
+
+.logo {
+    height: 25px;
+    @include tablet {
+        height: 35px;
+    }
+    @include desktop {
+        height: 50px;
+    }
+}

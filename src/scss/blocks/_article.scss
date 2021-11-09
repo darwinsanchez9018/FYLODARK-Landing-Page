@@ -1,0 +1,10 @@
+.article {
+    text-align: center;
+    padding: 8rem 2rem 20rem 2rem;
+    @include tablet {
+        padding: 25rem 3rem 0 3rem;
+    }
+    @include desktop {
+        padding: 0;
+    }
+}

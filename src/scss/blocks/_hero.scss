@@ -1,0 +1,35 @@
+.hero {
+    display: block;
+    margin: 0;
+    background-image: url("../assets/images/bg-curvy-mobile.svg");
+    @include tablet {
+        background-image: url("../assets/images/bg-curvy-mobile.svg");
+        background-position: 0 250px;
+        height: 600px;
+    }
+    @include desktop {
+        background-image: url("../assets/images/bg-curvy-desktop.svg");
+        background-position: 0 650px;
+        height: 1200px;
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 180px;
+    height: 315px;
+
+    &__img {
+        width: 100%;
+        padding: 0 2.5rem;
+        @include tablet {
+            display: block;
+            width: 65%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+        }
+        @include desktop {
+            width: 55%;
+            margin-top: 6rem;
+        }
+    }
+}

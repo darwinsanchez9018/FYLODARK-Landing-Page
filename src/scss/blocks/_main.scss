@@ -1,0 +1,63 @@
+.main {
+    position: relative;
+    background-color: var(--blue-main);
+    margin-top: -5%;
+    @include tablet {
+        margin-top: -15%;
+        height: 3500px;
+    }
+    @include desktop {
+        margin-top: -9%;
+        height: 2000px;
+    }
+    padding: 0;
+    width: 100%;
+    color: var(--white-color);
+
+    &__title {
+        background: transparent;
+        position: absolute;
+        top: -3.5%;
+        height: 350px;
+        font-size: 1.5rem;
+        text-align: center;
+        @include tablet {
+            top: -5%;
+            width: 500px;
+            font-size: 2rem;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        @include desktop {
+            top: -26%;
+            width: 800px;
+            font-size: 2.5rem;
+        }
+        line-height: 1.6;
+        padding: 0 1.5rem;
+
+    }
+    &__subtitle {
+        font-size: .9rem;
+        text-align: center;
+        padding: 4rem 2.3rem 1rem 2.3rem;
+        line-height: 1.5;
+        @include tablet {
+            position: absolute;
+            font-size: 1.2rem;
+            top: -1rem;
+            width: 550px;
+            left: 0;
+            right: 0;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        @include desktop {
+            font-size: 1.3rem;
+            top: -21%;
+            width: 700px;
+        }
+    }
+}

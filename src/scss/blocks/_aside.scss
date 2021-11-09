@@ -1,0 +1,103 @@
+.aside {
+    position: relative;
+    text-align: center;
+    margin: 0 1rem;
+    margin-top: -11rem;
+    padding: 2rem 1.5rem;
+    background-color: var(--blue-email);
+    border-radius: .5rem;
+    color: var(--white-color);
+    box-shadow: 4px 4px 10px 2px rgba(0,0,0, .3);
+
+    @include tablet {
+        margin: 0 3rem;
+        margin-top: -10rem;
+
+    }
+    @include desktop {
+        margin-top: -8rem;
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        padding: 4rem 4rem 4rem 4rem;
+
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        @include desktop {
+            font-size: 2rem;
+        }
+    }
+    &__text {
+        font-size: .9rem;
+        margin-bottom: 3rem;
+        @include desktop {
+            width: 700px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+}
+
+.form {
+    &__input {
+        width: 100%;
+        padding: .85rem 2rem;
+        border-radius: 5rem;
+        border: none;
+        margin-bottom: 1.5rem;
+        &::placeholder {
+            font-size: .7rem;
+            color: #888;
+        }
+    }
+
+    &__submit {
+        width: 100%;
+        border: none;
+        @include tablet {
+            position: relative;
+            width: 100%;
+            height: 60px;
+        }
+        @include desktop {
+            width: 50%;
+            padding: .8rem 0;
+            height: 45px;
+            cursor: pointer;
+        }
+    }
+
+    @include desktop {
+        display: flex;
+        gap: 2rem;
+    }
+
+// Para el form--error VALIDACIóN
+    
+    &--error::before {
+        content: "Please enter a valid email address";
+        position: absolute;
+        top: 20rem;
+        left: 3rem;
+        font-size: .75rem;
+        color: var(--error-color);
+        font-weight: 700;
+
+        @include tablet {
+            top: 18.5rem;
+            left: 5rem;
+        }
+        @include desktop {
+            top: 16.5rem;
+            left: 6rem;
+        }
+    }
+}
+
+

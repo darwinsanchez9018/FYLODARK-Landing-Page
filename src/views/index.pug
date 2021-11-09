@@ -1,0 +1,108 @@
+include mixins/section
+include mixins/card
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon", href="assets/images/favicon.ico" type="image/x-icon")
+        link(rel="stylesheet", href="css/styles.css")
+        title FYLO-DARK Landing Page
+    body
+        header.header
+            img(src="assets/images/logo.svg", alt="LOGO").logo
+            nav.mainNav
+                ul.mainMenu
+                    li.mainMenu__item: a(href="#").mainNav__link Features
+                    li.mainMenu__item: a(href="#").mainNav__link Team
+                    li.mainMenu__item: a(href="#").mainNav__link Sign In
+        hero.hero
+            img(src="assets/images/illustration-intro.png", alt="Intro-Hero").hero__img
+            
+        main.main
+            h1.main__title All your files in one secure location, accessible anywhere.
+            p.main__subtitle Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.
+
+            a(href="#").button.button--cyan Get Started
+
+            article.article
+                section.section.section-one
+                    +section("icon-access-anywhere.svg", "Access your files, anywhere", "The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.")
+
+                    +section("icon-security.svg", "Security you can trust", "2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.")
+
+                    +section("icon-collaboration.svg", "Real-time collaboration", "Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.")
+
+                    +section("icon-any-file.svg", "Store any type of file", "Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.")
+
+                section.section-two
+                    .section-two-profile
+                        img(src="/assets/images/illustration-stay-productive.png", alt="").section-two-img
+
+                    .section-two-data
+                        h2.section-two-title Stay productive, wherever you are
+                        p.section-two-text Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
+                        p.section-two-text Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
+                        a(href="#").section-two-link See how Fylo works
+                            img(src="assets/images/icon-arrow.svg", alt="arrow").section-two-arrow
+
+                section.section-three
+                    img(src="/assets/images/bg-quotes.png", alt="").section-three-quotes
+
+                    .section-three-cards
+                        +card("Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.", "profile-1.jpg", "Satish Patel", "Founder & CEO, Huddle")
+
+                        +card("Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.", "profile-2.jpg", "Bruce McKenzie", "Founder & CEO, Huddle")
+
+                        +card("Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.", "profile-3.jpg", "Iva Boyd", "Founder & CEO, Huddle")
+
+        aside.aside
+            h2.aside__title Get early access today
+            p.aside__text It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
+            form#form.form
+                input(type="email" name="email" placeholder="email@example.com").form__input
+                button(type="submit").button.button--cyan.form__submit Get Started For Free
+
+        footer.footer
+            img(src="assets/images/logo.svg", alt="LOGO footer").footer__logo
+
+            .footer__data
+                .footer__info
+                    img(src="assets/images/icon-location.svg", alt="location")
+                    p.footer__text.footer__text-desktop Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+                .footer__information
+                    .footer__info
+                        img(src="assets/images/icon-phone.svg", alt="phone")
+                        p.footer__text +1-543-123-4567
+                    .footer__info
+                        img(src="assets/images/icon-email.svg", alt="email")
+                        p.footer__text example@fylo.com
+
+                ul.sitemap
+                    li.sitemap__item: a(href="#").sitemap__link About Us
+                    li.sitemap__item: a(href="#").sitemap__link Jobs
+                    li.sitemap__item: a(href="#").sitemap__link Press
+                    li.sitemap__item: a(href="#").sitemap__link Blog
+                ul.sitemap
+                    li.sitemap__item: a(href="#").sitemap__link Contact Us
+                    li.sitemap__item: a(href="#").sitemap__link Terms
+                    li.sitemap__item: a(href="#").sitemap__link Privacy
+
+                small.copy
+                    .copy__socials
+                        a(href="#").copy__social
+                            <i class="fab fa-facebook-f"></i>
+                        a(href="#").copy__social
+                            <i class="fab fa-twitter"></i>
+                        a(href="#").copy__social
+                            <i class="fab fa-instagram"></i>
+                    .copy__info © Copyright 2021 
+                        a(href="https://darwinsanchez9018.github.io/Frontend-Porfolio/" target="_blank").copy__link Darwin Sánchez 
+                        |All rights reserved.
+
+                        
+        script(src="js/scripts-dist.js")
+        script(src="https://kit.fontawesome.com/a0ab449b77.js" crossorigin="anonymous")

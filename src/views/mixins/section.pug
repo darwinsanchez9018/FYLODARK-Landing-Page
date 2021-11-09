@@ -1,0 +1,7 @@
+//- Creando un MIXIN para el section, porque se repite, en este caso (4 veces): recibe -> Una imagen, un titulo, y un texto.
+
+mixin section(img, title, text)
+    .section
+        img(src=`assets/images/${img}`, alt="").section__img
+        h2.section__title= title
+        p.section__text= text

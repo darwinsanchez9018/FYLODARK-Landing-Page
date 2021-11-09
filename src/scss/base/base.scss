@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--text-font);
+    font-size: 15px;
+    background-color: var(--blue-email);
+}
+
+h1, h2, h3 {
+    font-family: var(--header-font);
+}
+

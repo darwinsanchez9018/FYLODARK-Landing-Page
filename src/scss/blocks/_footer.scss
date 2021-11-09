@@ -1,0 +1,110 @@
+.footer {
+    background-color: var(--blue-footer);
+    margin-top: -300px;
+    padding-top: 300px;
+    color: var(--white-color);
+    @include desktop {
+        padding: 300px 6rem 4rem;
+    }
+
+    &__data {
+        @include desktop {
+            display: flex;
+        }
+    }
+
+    &__logo {
+        display: block;
+        margin: 4.5rem 2rem 3rem 2rem;
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info {
+        display: flex;
+        align-items: flex-start;
+        padding: 0 1.5rem;
+    }
+    &__text {
+        margin: 0 0 1rem 1.5rem;
+        font-size: 1rem;
+
+        @include desktop {
+            width: 330px;
+            }
+        
+    }
+}
+
+.sitemap {
+    @include reset-list;
+    margin: 4.5rem 1.5rem;
+    @include desktop {
+        margin: 0;
+        margin-left: -50px;
+        width: 300px;
+    }
+
+    &__item {
+        margin-bottom: 1rem;
+    }
+    &__link {
+        text-decoration: none;
+        color: var(--white-color);
+        @include desktop {
+            &:hover {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.copy {
+    text-align: center;
+
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+        height: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+    &__social {
+        color: var(--white-color);
+        border: 1px solid var(--white-color);
+        @include desktop {
+            &:hover {
+                color: var(--cyan-color);
+                border: 1px solid var(--cyan-color);
+            }
+        }
+
+        border-radius: 50%;
+        padding: .5rem;
+        height: 35px;
+        width: 35px;
+        font-size: 1rem;
+        justify-items: center;
+    }
+
+    &__info {
+        text-align: center;
+        padding-bottom: 1.5rem;
+        @include desktop {
+            text-align: right;
+            width: 170px;
+            font-size: 1rem;
+        }
+
+    }
+    &__link {
+        text-decoration: none;
+        color: var(--blue-color);
+        font-weight: 700;
+    }
+}

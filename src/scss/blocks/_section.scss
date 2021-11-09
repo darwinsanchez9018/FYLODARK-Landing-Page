@@ -1,0 +1,46 @@
+.section {
+    margin: 0;
+
+    &-one {
+        @include desktop {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10rem;
+            margin: 0 15rem;
+        }
+        
+    }
+
+    &__img {
+        height: 55px;
+        margin-bottom: 1rem;
+        @include tablet {
+            height: 105px;
+        }
+        @include desktop {
+            height: 85px;
+        }
+    }
+    &__title {
+        font-size: 1.1rem;
+        margin-bottom: 0;
+        @include tablet {
+            font-size: 1.3rem;
+        }
+        @include desktop {
+            font-size: 1.5rem;
+        }
+    }
+    &__text {
+        font-size: .85rem;
+        line-height: 1.5;
+        margin-bottom: 5.5rem;
+        @include tablet {
+            font-size: .92rem;
+        }
+        @include desktop {
+            font-size: 1rem;
+        }
+    }
+
+}
